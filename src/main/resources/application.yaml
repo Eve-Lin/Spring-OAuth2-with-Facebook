@@ -1,0 +1,17 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          facebook:
+            client-id: <your client id>
+            client-secret: <your client secret>
+            scope:
+              - email
+              - public_profile
+  mvc:
+    view:
+      prefix: WEB-INF/jsp/
+      suffix: .jsp
+  application:
+    name: Oauth2-Facebook-Login
